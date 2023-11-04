@@ -106,12 +106,15 @@ Esse comando vai retornar
 * Sua branch atual
 * Se a sua branch atual esta atualizada em relação a branch relacionada no repositorio remoto;
 * Informações sobre os status dos arquivos.
-
+  
+---  
 
 ```
 git add nomeArquivo.extensao
 ```
 Altera o status dos arquivos que estao Untracked ou modified para Staged, deixando-os prontos para serem *'commitados'*
+
+---  
 
 ```
 git diff
@@ -119,6 +122,8 @@ git diff
 Esse comando tem funcionamento semelhante ao git status, porem esse comando retorna as alterações que foram realizadas nos arquivos que estao com status **Modified** e **Untracked**. Apresentado as linhas de que foram inseridas na cor verde e as linhas excluidas na cor vermelha.
 
 :warning: Ao tentar usar o comando `git diff` após usar o comando `git add`, não teraá nenhum resultado na tela, pois todos os arquivos foram movidos para o status **Staged**, para isso devemos informar que queremos ver as modificações dos arquivos com status **Staged**, através do comando `git diff --staged`
+
+---
 
 ```
 git commit
@@ -130,4 +135,28 @@ Esse comando serve para enviar ao repositorio remoto os arquivos que estão com 
 ```
 git commit -m "Sua mensagem aqui"
 ```
+--------------------------------------------
+```
+git log
+```
+Esse comando retorna informações sobre todos os *'commits'* já realizados no repositorio, o autor , a data e hora e em qual *'branch'* foi realiado o *'commit'*
 
+---
+
+```
+git restore nomeArquivo.extensao
+```
+Esse comando exclui todas as modificações que foram feitas no arquivo, deixando-o da mesma forma que esta no ultimo *'commit'* registrado
+
+Caso o arquivo ja esteja com status **Staged**, para user o comando `git restore`, deve informar o status do arquivo a ser restaurado, para alterar seu status para **Modified** e apos, usar novamente o comando `git restore`, para restaurar o arquivo para seu estado inicial.
+```
+git restore --staged nomeArquivo.extensao.
+```
+
+## Interagindo com respositorios remotos
+
+Existem varios sites que fornecem hospedagem online de repositorios, os mais famosos são
+
+* :octopus:[GitHub](https://github.com/)
+* 🦊 [GitLab](https://about.gitlab.com/)
+* 🪣 [Bitbucket](https://bitbucket.org/product/)
