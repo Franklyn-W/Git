@@ -55,10 +55,14 @@ Abra o pront de comando
 1. Dentro da pasta, clique com o botão direto do mouse e selecione a opção "Abrir no terminal"  
 ou
 2. Abra o Pront de comando e digite o comando:  
-`cd caminho\da\pasta`  
+```
+cd caminho\da\pasta 
+```  
 
 Realize o clone do repositorio desejado, com o comando:  
-`git clone https://linkDoRepositorio.com`  
+```
+git clone https://linkDoRepositorio.com
+```  
 
 :warning:Use o link Https do repositorio para realizar a clonagem
 
@@ -71,21 +75,59 @@ Crie uma pasta vazia no seu diretorio de preferencia
 Abra o promt de comando, utilizando uma das duas formas citadas acima  
 
 Digite o comando:  
-`git init`
+```
+git init
+```
 
 ✅ Pronto, seu repositorio esta criado!  
 
-## Gravando as mudanças em seu repositorio Git
+## Status de arquivos
 
 O Git classifica os arquivos em quatro estagios  
-* Untracked = Arquivo não monitorado, que ainda não foi registrado no Git
-* Unmodified = arquivo monitorado e que não teve nenhuma modificação
-* Modified = Arquivo que contem modificações e que ainda não foi atualizado no Git
-* Staged = arquivo pronto para ser 'commitado' no Git
+* **Untracked** = Arquivo não monitorado, que ainda não foi registrado no Git
+* **Unmodified** = arquivo monitorado e que não teve nenhuma modificação
+* **Modified** = Arquivo que contem modificações e que ainda não foi atualizado no Git
+* **Staged** = arquivo pronto para ser *'commitado'* no Git
 
 A movimentação de estagios se da das seguintes formas  
-* Untracked -> Staged = Arquivo foi criado e esta pronto para ser adicionado ao Git
-* Unmodified -> Modified = Quando um arquivo sofre alterações no seu conteudo
-* Modified -> Staged = Arquivo foi modificado e esta pronto para ser 'commitado'
-* Unmodified -> Untracked = Quando o arquivo é excluido
-* Staged -> Unmodified = Todas as alterações foram 'commitadas' no Git
+* **Untracked -> Staged** = Arquivo foi criado e esta pronto para ser adicionado ao Git
+* **Unmodified -> Modified** = Quando um arquivo sofre alterações no seu conteudo
+* **Modified -> Staged** = Arquivo foi modificado e esta pronto para ser *'commitado'*
+* **Unmodified -> Untracked** = Quando o arquivo é excluido
+* **Staged -> Unmodified** = Todas as alterações foram *'commitadas'* no Git
+
+## Comandos de manipiulação de arquivos
+
+Para acompanhar o status dos arquivos, utilize o comando:  
+```
+git status
+```
+Esse comando vai retornar  
+* Sua branch atual
+* Se a sua branch atual esta atualizada em relação a branch relacionada no repositorio remoto;
+* Informações sobre os status dos arquivos.
+
+
+```
+git add nomeArquivo.extensao
+```
+Altera o status dos arquivos que estao Untracked ou modified para Staged, deixando-os prontos para serem *'commitados'*
+
+```
+git diff
+```
+Esse comando tem funcionamento semelhante ao git status, porem esse comando retorna as alterações que foram realizadas nos arquivos que estao com status **Modified** e **Untracked**. Apresentado as linhas de que foram inseridas na cor verde e as linhas excluidas na cor vermelha.
+
+:warning: Ao tentar usar o comando `git diff` após usar o comando `git add`, não teraá nenhum resultado na tela, pois todos os arquivos foram movidos para o status **Staged**, para isso devemos informar que queremos ver as modificações dos arquivos com status **Staged**, através do comando `git diff --staged`
+
+```
+git commit
+```
+Esse comando serve para enviar ao repositorio remoto os arquivos que estão com o status **Staged**
+
+É recomendavel o uso desse comando junto com o comando de adição de mensagem, para poder identificar no repositorio os *'commits'* realizados.
+
+```
+git commit -m "Sua mensagem aqui"
+```
+
