@@ -160,3 +160,13 @@ Existem varios sites que fornecem hospedagem online de repositorios, os mais fam
 * :octopus:[GitHub](https://github.com/)
 * 🦊 [GitLab](https://about.gitlab.com/)
 * 🪣 [Bitbucket](https://bitbucket.org/product/)
+
+
+```
+git push <repositorio_remoto> <_nome_branch_atual>
+```
+
+Comando utilizado para enviar os arquivos *'commitados'* para o repositorio remoto
+
+
+[Comando Git](https://www.freecodecamp.org/portuguese/news/ficha-informativa-do-git-50-comandos-do-git-que-voce-deveria-conhecer/)
