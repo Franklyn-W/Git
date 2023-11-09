@@ -3,7 +3,7 @@
 <img src = https://git-scm.com/images/logos/downloads/Git-Logo-2Color.png width = '300'>
 
 ## ⏬ Download:
-Disponivel para:  
+Disponível para:  
 * :apple: [MacOS](https://git-scm.com/download/mac)
 * :penguin: [Linux](https://git-scm.com/download/linux)
 * :window: [Windows (32/64 bits)](https://git-scm.com/download/win)
