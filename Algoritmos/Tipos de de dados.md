@@ -1,4 +1,4 @@
-Tipos de dados
+# Tipos de dados
 
 Numéricos: representa números, que podem representar quantidade, volumes e realizar cálculos.
 
