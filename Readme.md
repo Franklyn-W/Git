@@ -11,7 +11,7 @@ Nesse momento foram abordados os seguintes assuntos
 * Cálculo Básico
 * [Algoritmos](Algoritmos/)
 * [Python](Python/)
-* [Estatistica](Estatistica/) - Em curso
+* [Estatística](Estatistica/) - Em curso
 * Bando de Dados - Aguardando finalizar módulo anterior
 * Introdução ao SQL e PowerBI - Aguardando finalizar módulo anterior
 
