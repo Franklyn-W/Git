@@ -107,10 +107,6 @@ Formula de variância
 
 ![Formula Variância](imagens/medidas_posicao/variancia.png)
 
-lê-se = s² é igual ao somatório dos elementos do conjunto menos a média, elevado ao quadrado e divido pelo numero de elementos  
-
-
-
 #### Desvio padrão
 Para obter o desvio padrão, basta resolver a raiz da variância
 
