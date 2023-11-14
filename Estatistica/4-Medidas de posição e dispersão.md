@@ -111,10 +111,16 @@ lê-se = s² é igual ao somatório dos elementos do conjunto menos a média, el
 
 
 
-### Desvio padrão
+#### Desvio padrão
 Para obter o desvio padrão, basta resolver a raiz da variância
 
 ![Desvio Padrão](imagens/medidas_posicao/desvio_padrao.png)  
 
 Exemplo  
 ![Alt text](imagens/medidas_posicao/exemplo_desvio_padrao.png)
+
+#### Conclusão
+As medidas resumo (posição e variabilidade/dispersão) correspondem a uma síntese do conjunto de dados observados. Enquanto as medidas de posição ou de tendência central dão ideia do centro em torno do qual os dados se distribuem, as medidas de variabilidade ou dispersão revelam o quanto se dispersam.
+
+São exemplos de medida de posição: média, mediana e moda.
+São exemplos de variabilidade: mínimo, máximo, amplitude, quartis, percentis, variância e desvio padrão.
